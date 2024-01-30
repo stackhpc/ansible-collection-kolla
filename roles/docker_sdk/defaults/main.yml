@@ -10,6 +10,8 @@ docker_sdk_packages:
 # NOTE(mnasiadka): requests and urllib3 as a workaround for https://github.com/docker/docker-py/issues/3113
 docker_sdk_pip_packages:
   - "docker>=2.4.2,<5.0.0"
+  # This is required for packaging.version.Version used in the kolla_toolbox and kolla_container modules.
+  - "packaging>=21"
   - "requests<2.29.0"
   - "urllib3<2"
 
