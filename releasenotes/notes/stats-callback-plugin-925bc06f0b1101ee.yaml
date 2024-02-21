@@ -1,0 +1,8 @@
+---
+features:
+  - |
+    Adds a ``stats`` callback plugin. This plugin can be used to collect
+    statistics about an Ansible run and write them to a file in JSON format.
+    The statistics currently include the count and names of failed and
+    unreachable hosts. They also include whether execution stopped due to a
+    lack of remaining hosts.
